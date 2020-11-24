@@ -1,0 +1,8 @@
+com.HyperSphere.desktop.DesktopLauncher -> com.HyperSphere.desktop.DesktopLauncher:
+    10:10:void <init>() -> <init>
+    12:44:void main(java.lang.String[]) -> main
+com.HyperSphere.desktop.DesktopLauncher$1 -> com.HyperSphere.desktop.DesktopLauncher$1:
+    22:22:void <init>() -> <init>
+    25:29:void sendAnalytic(short,java.lang.String) -> sendAnalytic
+    34:34:void purchase(java.lang.String) -> purchase
+    39:39:void verifyPurchase(java.lang.String,java.lang.String) -> verifyPurchase

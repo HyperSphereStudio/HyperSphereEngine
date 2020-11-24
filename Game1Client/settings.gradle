@@ -1,0 +1,2 @@
+include ':gameanalytics'
+include 'desktop', 'android', 'ios', 'core'

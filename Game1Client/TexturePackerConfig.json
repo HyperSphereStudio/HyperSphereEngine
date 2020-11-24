@@ -1,0 +1,10 @@
+{
+  "SliceInputDirectory": "RawAsset/InputSlice/",
+  "SliceOutputDirectory": "RawAsset/OutputSlice/",
+  "RectangleDisposeSize": 16,
+  "ColorBound": 1000,
+  "FileRenamePath": "RawAsset/OutputSlice",
+  "TinifyKey": "(Put Key Here)",
+  "ConfigFileDir" : "RawAsset/ConfigFiles",
+  "ShrinkAt": 1000
+}

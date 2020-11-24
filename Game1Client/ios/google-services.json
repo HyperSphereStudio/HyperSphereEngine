@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "521959114575",
+    "firebase_url": "https://game1-3285d.firebaseio.com",
+    "project_id": "game1-3285d",
+    "storage_bucket": "game1-3285d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:521959114575:android:e45484f6df67770bdca73a",
+        "android_client_info": {
+          "package_name": "com.jbgames.BaseGame"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "521959114575-icklgsegkf1kfld9ruoe7q1cm09dqers.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCUbj9QpYo3r4Ct9fYQo8ZOnZMNOroQR0w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "521959114575-icklgsegkf1kfld9ruoe7q1cm09dqers.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

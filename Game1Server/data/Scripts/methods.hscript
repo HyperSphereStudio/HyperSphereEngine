@@ -1,0 +1,12 @@
+autoopen;
+public(quadsolve){
+sout(0, math((-gin(1) + (gin(1) ^ 2 - 4 * gin(0) * gin(2)) ^ .5) / (2 * gin(0))));
+sout(1, math((-gin(1) - (gin(1) ^ 2 - 4 * gin(0) * gin(2)) ^ .5) / (2 * gin(0))));
+};
+public(quadcheck){
+sout(0, false);
+if(math(gin(0) * (gin(3) ^ 2 )+ gin(1) * gin(3) + gin(2)) == 0){
+sout(0, true);
+}
+}
+

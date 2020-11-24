@@ -1,0 +1,57 @@
+import proguard.gradle.ProGuardTask
+
+apply plugin: "java"
+sourceCompatibility = 8
+targetCompatibility = 8
+
+sourceSets.main.java.srcDirs = ["src/"]
+sourceSets.main.resources.srcDirs = ["../android/assets"]
+
+project.ext.mainClassName = "com.HyperSphere.desktop.DesktopLauncher"
+project.ext.assetsDir = new File("../android/assets")
+
+task run(dependsOn: classes, type: JavaExec) {
+    main = project.mainClassName
+    classpath = sourceSets.main.runtimeClasspath
+    standardInput = System.in
+    workingDir = project.assetsDir
+    ignoreExitValue = true
+}
+
+task debug(dependsOn: classes, type: JavaExec) {
+    main = project.mainClassName
+    classpath = sourceSets.main.runtimeClasspath
+    standardInput = System.in
+    workingDir = project.assetsDir
+    ignoreExitValue = true
+    debug = true
+}
+
+task dist(type: Jar) {
+    apply plugin: 'java'
+    manifest {
+        attributes 'Main-Class': project.mainClassName
+    }
+
+    dependsOn configurations.runtimeClasspath
+    from {
+
+        configurations.runtimeClasspath.collect {it.isDirectory() ? it : zipTree(it)}
+    }
+    with jar
+}
+
+task proguardTask (type: ProGuardTask) {
+    configuration files("proguard-rules.pro")
+    injars files("build/libs/desktop-1.0.jar")
+    outjars files("build/libs/proguarded.jar")
+}
+
+
+dist.dependsOn classes
+
+eclipse.project.name = appName + "-desktop"
+dependencies {
+    implementation "com.badlogicgames.gdx:gdx-freetype-platform:$gdxVersion:natives-desktop"
+    implementation "com.badlogicgames.gdx:gdx-freetype:$gdxVersion"
+}

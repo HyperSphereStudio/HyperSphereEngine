@@ -1,0 +1,2 @@
+com.HyperSphere.desktop.DesktopLauncher
+com.HyperSphere.desktop.DesktopLauncher: void main(java.lang.String[])
